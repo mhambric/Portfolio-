@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Study 1: StudyBuddy - Bridging the Gap for Online Students</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0 0 1rem 0;
+      list-style: none;
+    }
+
+    nav ul li a {
+      font-weight: bold;
+      font-size: 1rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+      color: #ddd;
+    }
+
+    header {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto 3rem auto;
+      padding: 0 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 2.2rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.6rem;
+      font-weight: bold;
+      color: #222;
+    }
+
+    p {
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .intro-section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .intro-text {
+      flex: 1 1 350px;
+      min-width: 300px;
+    }
+
+    .intro-text h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .intro-text p {
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .intro-image {
+      flex: 1 1 350px;
+      min-width: 300px;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .bold-title {
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #007bff;
+      padding-bottom: 0.3rem;
+      max-width: max-content;
+    }
+
+    .figma-gallery-scroll {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+
+    .figma-gallery-scroll figure {
+      text-align: center;
+      max-width: 300px;
+    }
+
+    .figma-gallery-scroll figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    /* Phone frame styling */
+    .phone-frame {
+      position: relative;
+      width: 260px;
+      /* fixed width for phone frame */
+      height: 540px;
+      /* fixed height for phone frame */
+      background: #FFC107;
+      border-radius: 70px;
+      transform: rotate(0.26deg);
+    }
+
+    /* Notch bar */
+    .phone-frame::before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 6px;
+      background: #666;
+      border-radius: 3px;
+      z-index: 2;
+    }
+
+    /* Scrollable screen inside phone */
+    .phone-screen {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      /* smooth scrolling on iOS */
+    }
+
+    /* Image inside scroll container */
+    .phone-screen img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Case Study 1: StudyBuddy - Bridging the Gap for Online Students</h1>
+  </header>
+
+  <main>
+    <section class="intro-section">
+      <img src="images/LOG IN PAGE.png" alt="StudyBuddy Login Page" class="intro-image" />
+      <div class="intro-text">
+        <h1>StudyBuddy: Bridging the Gap for Online Students</h1>
+        <p>An app designed to connect online students with local classmates to form study groups, foster collaboration,
+          and build community.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="bold-title">Prototypes</div>
+      <div class="figma-gallery-scroll">
+        <figure>
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="images/Discovery page.png" alt="Discovery Page" />
+            </div>
+          </div>
+          <figcaption>Discovery Page</figcaption>
+        </figure>
+
+        <figure>
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="images/Home.png" alt="Home Page" />
+            </div>
+          </div>
+          <figcaption>Home Page</figcaption>
+        </figure>
+
+        <figure>
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="images/Messanger.png" alt="Messenger Page" />
+            </div>
+          </div>
+          <figcaption>Messenger Page</figcaption>
+        </figure>
+
+        <figure>
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="images/WIRE FRAME.png" alt="Wireframe" />
+            </div>
+          </div>
+          <figcaption>Wireframe</figcaption>
+        </figure>
+
+        <figure>
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="images/LOG IN PAGE.png" alt="Login Page" />
+            </div>
+          </div>
+          <figcaption>Login Page</figcaption>
+        </figure>
+
+        <figure>
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="images/Profile.png" alt="Profile Page" />
+            </div>
+          </div>
+          <figcaption>Profile Page</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <div class="bold-title">Surveys</div>
+      <p>During this process, I aimed to gather insights that would inform a design better suited to the needs of the
+        online student community. To achieve this, I developed a survey with the following questions to capture the
+        experiences and perspectives of online students:
+        
+        How connected do you feel to your fellow students as an online learner?
+        
+        Do you experience feelings of isolation as an online student?
+        
+        How easy or difficult is it for you to form study groups with your classmates?
+        
+        In what ways has being an online student positively impacted you?
+        
+        
+        What challenges have you faced as an online student?
+        
+        Do you wish it were easier to connect with classmates who share your major and courses?
+        
+        The survey was distributed via a Google Form posted on the OSU Ecampus Facebook group. Participants were invited
+        to answer the questions, providing valuable qualitative data. No direct observations were conducted during this
+        research phase.
+      </p>
+    </sectvcion>
+    
+    <section>
+      <div class="bold-title">Wireframes</div>
+      <p>Using Figma, the design process began with the creation of low-fidelity wireframes that served as a visual blueprint for 
+        the app's layout, navigation, and key features. These wireframes helped outline the structure and user flow, making it easier 
+        to identify potential design challenges early on. Building on this foundation, interactive prototypes were developed in Figma 
+        to simulate the user experience. This iterative approach allowed for user testing and feedback, which was then used to refine 
+        the design and ensure that the final product is both user-friendly and aligned with the needs of the target audience.
+      </p>
+    </section>
+    
+    <section>
+      <div class="bold-title">UX Metrics</div>
+      <p>The participant found the concept enticing. Improvements in visual differentiation, navigation, and error
+        prevention were assessed after survey was obtained. Overall, the evaluation identified critical areas for
+        refinement to enhance the app’s user experience. From the metrics gathered, online students could benefit from
+        this app.</p>
+      <img src="images/metrics-chart.png" alt="UX Metrics Chart"
+        style="max-width:100%; height:auto; border-radius:8px; margin-top:1rem;" />
+    </section>
+
+    <section>
+      <div class="bold-title">Learnings</div>
+      <p>This project enhanced my skills in user experience design, particularly through iterative prototyping in Figma
+        and heuristic evaluation. I gained valuable insights into online student behavior, discovering that while
+        flexibility allows students to balance work, study, and personal responsibilities, it also contributes to a
+        sense of isolation. Overall, this project reaffirmed the importance of designing digital platforms that leverage
+        the benefits of online learning while actively addressing its challenges.</p>
+    </section>
+
+    <section>
+      <div class="bold-title">Next Steps</div>
+      <p>While time and resource constraints limited the scope of certain enhancements, I would have loved to further
+        explore in-depth user research sessions, including focus groups and real-world testing scenarios. This deeper
+        dive could have provided richer insights into user behavior and preferences, particularly regarding the
+        challenges of online learning. I would also like to add real-time communication and scheduling, integrating live
+        chat and scheduling tools, to improve user interaction.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Maritza Hambric</p>
+  </footer>
+</body>
+
+</html>
